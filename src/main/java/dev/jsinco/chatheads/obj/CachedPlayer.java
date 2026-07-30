@@ -49,7 +49,7 @@ public class CachedPlayer extends CachedPlayerConfig {
                     " checkBedrockPlayer(player.getUniqueId()): " + checkBedrockPlayer(player.getUniqueId()));
             ChatHeads.getPlugin().getLogger().info(String.valueOf(player.getResourcePackStatus()));
         }
-        return !player.hasResourcePack() || checkBedrockPlayer(player.getUniqueId());
+        return !player.hasResourcePack(); //|| checkBedrockPlayer(player.getUniqueId());
     }
 
     public boolean doNotReverseOrientation() {
